@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Post</title>
+</head>
+<style>
+ 
+ *{
+  background-color: rgb(39, 38, 38);
+  margin: 0;
+  padding: 0;
+
+ }
+ h1{
+  background-color: black;
+  color: aliceblue;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+ form{
+  display:block;
+
+  padding: 14px;
+  margin-top:20px;
+
+
+
+ }
+ input{
+   font-size: xx-large;
+   padding: 4px;
+   display: block;
+   margin-top: 20px;
+   border-color: burlywood;
+   border:2px solid green;
+
+ }
+ textarea{
+  height: 100px;
+  width:500px;
+  display: block;
+  margin-top: 20px;
+  color: aqua;
+  border:2px solid green;
+  font-size: medium;
+  
+  
+ }
+ button{
+  margin-top:20px;
+  height: 68px;
+  width: 110px;
+background-color: blue ;
+color:azure;
+border-radius: 13px;
+
+
+ }
+
+
+
+
+
+
+</style>
+<body>
+  <center>
+  <h1>Create New Post</h1>
+  <form action="/new-post" method="POST">
+    <input type="text" name="title" placeholder="Title" required>
+    <input type="text" name="thumbnail" placeholder="Thumbnail URL" required>
+    <textarea name="content" placeholder="Content" required></textarea>
+    <button type="submit">Post</button>
+  </form>
+  </center>
+</body>
+</html>

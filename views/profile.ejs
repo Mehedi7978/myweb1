@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile</title>
+</head>
+
+<body>
+  <h1>Welcome, <%= user.username %></h1>
+  <a href="/">Back to Home</a> | <a href="/logout">Logout</a>
+  <h2>Your Blogs</h2>
+  <% blogs.forEach(blog => { %>
+    <div>
+      <h3><%= blog.title %></h3>
+      <p><%= blog.content %></p>
+      <small>Posted on <%= blog.createdAt.toLocaleString() %></small>
+    </div>
+    <hr>
+  <% }) %>
+</body>
+</html>
